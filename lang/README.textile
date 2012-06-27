@@ -19,9 +19,17 @@ h2. Features
 
 h2. To Be Determined
 
-* Should we just reuse Pipes? Makes a lot of sense. Does it support async/Future though?
+* Should we just reuse Tinkerpop Pipes? Makes a lot of sense. Does it support async/Future though?
   File an enhancement request?
 * Akka Dataflow?
+
+h3. Dataflow Frameworks
+
+* "Tinkerpop Pipes":https://github.com/tinkerpop/pipes/wiki/
+* "Smooks":http://www.smooks.org/mediawiki/index.php?title=Main_Page
+* "Kettle / Pentaho Data Integration (PDI)":http://kettle.pentaho.com/
+* "Apache UIMA":http://uima.apache.org/
+* "Java Data Processing Framework (JPDF)":http://www.jdpf.org/
 
 h2. Built-in Objects
 
