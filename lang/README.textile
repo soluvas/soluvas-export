@@ -1,0 +1,30 @@
+h1. Soluvas Export Lang
+
+A data transformation language inspired by "Tinkerpop Gremlin":https://github.com/tinkerpop/gremlin/wiki
+and "Tinkerpop Pipes":https://github.com/tinkerpop/pipes/wiki/.
+
+The goal is to allow one-liner common transformations, and short scripts for complex transformations.
+
+Read a bunch of vCard files, output all person names:
+
+bc. VCardReader.load("vcard/*.vcf").map { it.name }
+
+h2. Features
+
+* Short syntax, powered by Groovy
+* Asynchronous processing/Future powered by Akka
+* Built-in support for most popular formats (XML, JSON, CSV, vCard, RDF/TURTLE) and repositories (JDBC, Neo4j, MongoDB, LDAP, REST, OData)
+* Implicit "print". For console, resulting iterable will be printed out in batch format (or the active format). Can be re-formatted as XML, etc.
+* Pretty print by default
+
+h2. To Be Determined
+
+* Should we just reuse Pipes? Makes a lot of sense. Does it support async/Future though?
+  File an enhancement request?
+* Akka Dataflow?
+
+h2. Built-in Objects
+
+h2. Future Plans
+
+* Support Scala, JavaScript, JRuby, Ceylon as additional languages
